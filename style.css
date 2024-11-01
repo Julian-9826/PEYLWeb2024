@@ -115,15 +115,10 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     outline: none;
 }
 
-/* Estilo para nav con bordes redondeados */
 nav {
     background-color: #333; /* Fondo de la barra de navegación en gris oscuro */
     padding: 15px;
     text-align: center;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-    max-width: 1200px; /* Ancho máximo opcional */
-    margin: 0 auto 20px auto; /* Centrar y separar del contenido inferior */
 }
 
 nav a {
