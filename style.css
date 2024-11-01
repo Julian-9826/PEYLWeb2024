@@ -15,6 +15,18 @@ body {
     min-height: 100vh;
 }
 
+
+header {
+    display: flex;
+    justify-content: flex-end; /* Coloca el contenido al lado derecho */
+    align-items: center;
+    height: 200px; /* Ajusta la altura del header según lo necesites */
+    background-color: #f7f7f7;
+    padding-right: 20px; /* Espacio desde el borde derecho */
+}
+
+
+
 h1, h2, h3 {
     color: #333; /* Encabezados en gris oscuro */
     margin-bottom: 10px;
