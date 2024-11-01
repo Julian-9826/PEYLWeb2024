@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #f0f4f8;
+    background-color: #f7f7f7; /* Fondo gris claro */
     color: #333;
     padding: 20px;
     line-height: 1.8;
@@ -17,31 +17,29 @@ body {
 }
 
 h1, h2, h3 {
-    color: #003366;
+    color: #333; /* Encabezados en gris oscuro */
     margin-bottom: 10px;
     font-weight: 500;
 }
 
 p {
-    color: #666;
+    color: #555; /* Texto en un gris oscuro */
     margin-bottom: 20px;
 }
 
-
 a {
-    color: #0077b6;
+    color: #333; /* Enlaces en gris oscuro */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #005082;
+    color: #666; /* Enlaces en gris intermedio al pasar el mouse */
     text-decoration: underline;
 }
 
-
 button {
-    background-color: #0077b6;
+    background-color: #333; /* Botón en gris oscuro */
     color: white;
     border: none;
     padding: 12px 24px;
@@ -52,10 +50,9 @@ button {
 }
 
 button:hover {
-    background-color: #005082;
+    background-color: #555; /* Botón en gris intermedio al pasar el mouse */
     transform: translateY(-2px);
 }
-
 
 .container {
     max-width: 1200px;
@@ -63,7 +60,6 @@ button:hover {
     padding: 20px;
     flex-grow: 1; 
 }
-
 
 .card {
     background-color: white;
@@ -75,11 +71,11 @@ button:hover {
 }
 
 .card h3 {
-    color: #003366;
+    color: #333; /* Títulos en gris oscuro */
 }
 
 .card p {
-    color: #555;
+    color: #555; /* Texto en gris */
 }
 
 .card:hover {
@@ -88,7 +84,7 @@ button:hover {
 
 /* Footer */
 footer {
-    background-color: #003366;
+    background-color: #333; /* Fondo del pie de página en gris oscuro */
     color: white;
     text-align: center;
     padding: 20px;
@@ -97,14 +93,13 @@ footer {
 }
 
 footer a {
-    color: #aad8e6;
+    color: #ddd; /* Enlaces en el pie de página en gris claro */
     transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #88c0d0;
+    color: #bbb; /* Enlaces en el pie de página en gris medio */
 }
-
 
 input[type="text"], input[type="email"], textarea {
     width: 100%;
@@ -117,13 +112,12 @@ input[type="text"], input[type="email"], textarea {
 }
 
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
-    border-color: #0077b6;
+    border-color: #333;
     outline: none;
 }
 
-
 nav {
-    background-color: #003366;
+    background-color: #333; /* Fondo de la barra de navegación en gris oscuro */
     padding: 15px;
     text-align: center;
 }
@@ -139,5 +133,5 @@ nav a {
 }
 
 nav a:hover {
-    color: #aad8e6;
+    color: #ddd; /* Enlaces en la navegación en gris claro al pasar el mouse */
 }
