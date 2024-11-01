@@ -1,9 +1,10 @@
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Danfo', sans-serif; /* Cambiado a Danfo */
 }
 
 body {
@@ -27,7 +28,6 @@ p {
     margin-bottom: 20px;
 }
 
-
 a {
     color: #0077b6;
     text-decoration: none;
@@ -38,7 +38,6 @@ a:hover {
     color: #005082;
     text-decoration: underline;
 }
-
 
 button {
     background-color: #0077b6;
@@ -56,14 +55,12 @@ button:hover {
     transform: translateY(-2px);
 }
 
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     flex-grow: 1; 
 }
-
 
 .card {
     background-color: white;
@@ -105,7 +102,6 @@ footer a:hover {
     color: #88c0d0;
 }
 
-
 input[type="text"], input[type="email"], textarea {
     width: 100%;
     padding: 12px;
@@ -120,7 +116,6 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     border-color: #0077b6;
     outline: none;
 }
-
 
 nav {
     background-color: #003366;
