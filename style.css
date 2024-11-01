@@ -18,13 +18,12 @@ body {
 
 header {
     display: flex;
-    justify-content: flex-end; /* Coloca el contenido al lado derecho */
+    justify-content: space-between; /* Separa el contenido y el logo */
     align-items: center;
     height: 200px; /* Ajusta la altura del header según lo necesites */
     background-color: #f7f7f7;
-    padding-right: 20px; /* Espacio desde el borde derecho */
+    padding: 0 20px; /* Espacio en los lados izquierdo y derecho */
 }
-
 
 
 h1, h2, h3 {
