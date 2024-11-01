@@ -21,6 +21,28 @@ h1, h2, h3 {
     font-weight: 500;
 }
 
+/* Estilo inicial para el logo */
+.logo {
+    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    animation: giro 2s ease-in-out forwards; /* Aplica la animación */
+}
+
+/* Definición de la animación */
+@keyframes giro {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
+
+
 p {
     color: #555; /* Texto en un gris oscuro */
     margin-bottom: 20px;
