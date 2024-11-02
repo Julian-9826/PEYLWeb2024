@@ -5,7 +5,7 @@
     font-family: "Bebas Neue", sans-serif;
 }
 /* Encabezado fijo */
-.fixed-header {  /* Nueva clase para hacer el encabezado fijo */
+.fixed-header {  
     position: fixed;
     top: 0;
     left: 0;
@@ -19,7 +19,7 @@
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 body {
-    background-color: #f7f7f7; /* Fondo gris claro */
+    background-color: #f7f7f7; 
     color: #333;
     padding: 20px;
     line-height: 1.8;
@@ -50,11 +50,11 @@ body {
 }
 header {
     display: flex;
-    justify-content: space-between; /* Separa el contenido y el logo */
+    justify-content: space-between; 
     align-items: center;
-    height: 200px; /* Ajusta la altura del header según lo necesites */
+    height: 200px; 
     background-color: #f7f7f7;
-    padding: 0 20px; /* Espacio en los lados izquierdo y derecho */
+    padding: 0 20px; 
 }
 
 
@@ -98,7 +98,7 @@ a {
 }
 
 a:hover {
-    color: #666; /* Enlaces en gris intermedio al pasar el mouse */
+    color: #666; 
     text-decoration: underline;
 }
 
@@ -148,7 +148,7 @@ button:hover {
 
 /* Footer */
 footer {
-    background-color: #333; /* Fondo del pie de página en gris oscuro */
+    background-color: #333; 
     color: white;
     text-align: center;
     padding: 20px;
@@ -157,12 +157,12 @@ footer {
 }
 
 footer a {
-    color: #ddd; /* Enlaces en el pie de página en gris claro */
+    color: #ddd; 
     transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #bbb; /* Enlaces en el pie de página en gris medio */
+    color: #bbb; 
 }
 
 input[type="text"], input[type="email"], textarea {
@@ -180,7 +180,7 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     outline: none;
 }
 nav {
-    background-color: #333; /* Fondo de la barra de navegación en gris oscuro */
+    background-color: #333; 
     padding: 15px;
     text-align: center;
     border-radius: 10px; 
@@ -198,7 +198,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ddd; /* Enlaces en la navegación en gris claro al pasar el mouse */
+    color: #ddd; 
 }
 
 
@@ -307,8 +307,8 @@ table tr:hover {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #fff; /* Botón de color blanco */
-    color: #000; /* Flecha de color negro */
+    background-color: #fff; 
+    color: #000;
     font-size: 24px;
     padding: 10px;
     border-radius: 50%;
@@ -325,5 +325,5 @@ table tr:hover {
 
 .back-to-top:hover {
     opacity: 1;
-    background-color: #f0f0f0; /* Color gris claro al pasar el mouse */
+    background-color: #f0f0f0; 
 }
