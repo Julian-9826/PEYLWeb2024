@@ -307,8 +307,8 @@ table tr:hover {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #fff;
-    color: white;
+    background-color: #fff; /* Botón de color blanco */
+    color: #000; /* Flecha de color negro */
     font-size: 24px;
     padding: 10px;
     border-radius: 50%;
@@ -325,5 +325,5 @@ table tr:hover {
 
 .back-to-top:hover {
     opacity: 1;
-    background-color: #555;
+    background-color: #f0f0f0; /* Color gris claro al pasar el mouse */
 }

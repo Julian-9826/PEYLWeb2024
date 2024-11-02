@@ -8,19 +8,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Danfo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<h1>Formulario de Contacto</h1>
-<nav>
-    <ul>
-        <li>
-            <a href="index.html">Inicio</a>
-            <a href="Contacto.html">Contacto</a>
-            <a href="acercade.html">Acerca de</a>
-        </li>
-    </ul>
-</nav>
+
 <body>
     <div id="top"></div>
-   
+    
+    <!-- Encabezado fijo -->
+    <div class="fixed-header">
+        <h1>Formulario de Contacto</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                    <a href="Contacto.html">Contacto</a>
+                    <a href="acercade.html">Acerca de</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
     <form>
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" maxlength="20" required><br><br>
@@ -124,8 +129,6 @@
             <td id="suscripcion-output"></td>
         </tr>
     </table>
-
-    
 
 <a href="#top" class="back-to-top">↑</a>
 </body>
