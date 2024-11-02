@@ -4,7 +4,20 @@
     box-sizing: border-box;
     font-family: "Bebas Neue", sans-serif;
 }
-
+/* Encabezado fijo */
+.fixed-header {  /* Nueva clase para hacer el encabezado fijo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
 body {
     background-color: #f7f7f7; /* Fondo gris claro */
     color: #333;
@@ -13,6 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 150px;
 }
 
 /* Acerca de Section */
