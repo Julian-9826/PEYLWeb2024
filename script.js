@@ -1,6 +1,6 @@
+// script.js
 
-
-// Función para actualizar los valores en la tabla 
+// Función para actualizar los valores en la tabla cada vez que cambia un campo del formulario
 function actualizarTabla(idCampo, idOutput) {
     const campo = document.getElementById(idCampo);
     const output = document.getElementById(idOutput);
