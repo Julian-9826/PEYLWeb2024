@@ -11,19 +11,19 @@
 
 <body>
 
-   <!-- Encabezado fijo -->
-   <div class="fixed-header">
-    <h1>Acerca de mi</h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Inicio</a>
-                <a href="Contacto.html">Contacto</a>
-                <a href="acercade.html">Acerca de</a>
-            </li>
-        </ul>
-    </nav>
-</div>
+    
+    <div class="fixed-header">
+        <h1>Acerca de mi</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                    <a href="Contacto.html">Contacto</a>
+                    <a href="acercade.html">Acerca de</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
     <main>
         <section class="acerca-de">
@@ -46,6 +46,18 @@
                 <p>Desde chico siempre me gustó la informática y las consolas, y cuando vi que en la universidad existía una tecnicatura, no dudé en inscribirme.</p>
                 <p>También siempre me gustó la idea de poder trabajar de forma remota desde cualquier parte del mundo y espero algún día poder hacerlo.</p>
             </article>
+
+            <!-- Currículum con botón "Leer más" -->
+            <article>
+                <h3 class="sticky-header">Currículum</h3>
+                <p id="cv-abreviado">Resumen breve del currículum...</p>
+                <p id="cv-completo" style="display: none;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <button onclick="toggleCv()">Leer más</button>
+            </article>
         </section>
     </main>
 
@@ -57,6 +69,24 @@
     </footer>
 
     <a href="#top" class="back-to-top">↑</a>
+
+    <!-- Script para el botón "Leer más" -->
+    <script>
+        function toggleCv() {
+            const cvCompleto = document.getElementById("cv-completo");
+            const cvAbreviado = document.getElementById("cv-abreviado");
+            const button = document.querySelector("button");
+            if (cvCompleto.style.display === "none") {
+                cvCompleto.style.display = "block";
+                cvAbreviado.style.display = "none";
+                button.textContent = "Leer menos";
+            } else {
+                cvCompleto.style.display = "none";
+                cvAbreviado.style.display = "block";
+                button.textContent = "Leer más";
+            }
+        }
+    </script>
 </body>
 
 </html>
