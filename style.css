@@ -29,9 +29,8 @@ body {
     padding-top: 150px;
 }
 
-/* Acerca de Section */
 .acerca-de {
-    max-height: 300px;
+    max-height: 500px; /* Aumentado desde 300px para más espacio */
     overflow-y: auto;
     padding: 20px;
     border: 1px solid #ddd;
