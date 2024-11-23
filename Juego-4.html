@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juegos</title>
+    <title>Juego - Memoria con Cartas</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Danfo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="fixed-header">
-        <h1>Sección de Juegos</h1>
+        <h1>Memoria con Cartas</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -23,18 +23,18 @@
 
     <main class="container">
         <section>
-            <h2>Explora nuestros juegos:</h2>
-            <ul class="game-links">
-                <li><a href="Juego-1.html">Piedra, Papel o Tijera</a></li>
-                <!-- Espacio para futuros juegos -->
-                <li><a href="#">Juego 2 (Próximamente)</a></li>
-                <li><a href="#">Juego 3 (Próximamente)</a></li>
-            </ul>
+            <h2>¡Encuentra las parejas!</h2>
+            <div id="tablero" class="card">
+                <!-- Las cartas se generarán dinámicamente -->
+            </div>
+            <button onclick="reiniciarJuego()">Reiniciar Juego</button>
         </section>
     </main>
 
     <footer>
         <p>&copy; Universidad Nacional del Comahue</p>
     </footer>
+
+    <script src="Juego-4.js"></script>
 </body>
 </html>

@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego - Preguntas y Respuestas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Danfo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fixed-header">
+        <h1>Preguntas y Respuestas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Juegos.html">Juegos</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="container">
+        <section>
+            <h2>Trivia: ¿Cuánto sabes?</h2>
+            <p>Selecciona la respuesta correcta:</p>
+            <div id="pregunta" class="card">
+                <h3 id="texto-pregunta">Pregunta...</h3>
+                <button onclick="seleccionarRespuesta(0)">Opción 1</button>
+                <button onclick="seleccionarRespuesta(1)">Opción 2</button>
+                <button onclick="seleccionarRespuesta(2)">Opción 3</button>
+                <button onclick="seleccionarRespuesta(3)">Opción 4</button>
+            </div>
+            <div id="resultado" class="card">
+                <h3>Resultado:</h3>
+                <p id="mensaje"></p>
+            </div>
+            <button onclick="reiniciarJuego()">Jugar otra vez</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Universidad Nacional del Comahue</p>
+    </footer>
+
+    <script src="Juego-3.js"></script>
+</body>
+</html>
