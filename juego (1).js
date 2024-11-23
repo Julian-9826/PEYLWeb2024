@@ -19,3 +19,8 @@ function playGame(eleccionUsuario) {
 
     document.getElementById('mensaje').textContent = mensaje;
 }
+
+// Función para reiniciar el juego
+function resetGame() {
+    document.getElementById('mensaje').textContent = '';
+}
