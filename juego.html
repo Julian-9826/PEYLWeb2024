@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego - Piedra, Papel o Tijera</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Danfo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fixed-header">
+        <h1>Juego: Piedra, Papel o Tijera</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="juego.html">Juego</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="container">
+        <section>
+            <h2>¡Juega Piedra, Papel o Tijera!</h2>
+            <p>Selecciona una opción:</p>
+            <div class="game-buttons">
+                <button onclick="playGame('piedra')">Piedra</button>
+                <button onclick="playGame('papel')">Papel</button>
+                <button onclick="playGame('tijera')">Tijera</button>
+            </div>
+            <div id="resultado" class="card">
+                <h3>Resultado:</h3>
+                <p id="mensaje"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Universidad Nacional del Comahue</p>
+    </footer>
+
+    <script src="juego.js"></script>
+</body>
+</html>
