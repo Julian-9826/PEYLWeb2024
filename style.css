@@ -4,8 +4,7 @@
     box-sizing: border-box;
     font-family: "Bebas Neue", sans-serif;
 }
-
-/* Encabezado fijo */
+/* Encabezad fijo */
 .fixed-header {  
     position: fixed;
     top: 0;
@@ -18,19 +17,16 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    height: 60px; /* Altura fija del header */
 }
-
 body {
     background-color: #f7f7f7; 
     color: #333;
-    padding: 0; /* Eliminamos el padding redundante */
-    margin: 0; /* Aseguramos que no haya margen extra */
+    padding: 20px;
     line-height: 1.8;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 80px; /* Dejar espacio suficiente debajo del header */
+    padding-top: 150px;
 }
 
 .acerca-de {
@@ -43,6 +39,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+
 .sticky-header {
     position: sticky;
     top: 0;
@@ -50,7 +47,6 @@ body {
     padding: 10px 0;
     z-index: 1;
 }
-
 header {
     display: flex;
     justify-content: space-between; 
@@ -59,6 +55,7 @@ header {
     background-color: #f7f7f7;
     padding: 0 20px; 
 }
+
 
 h1, h2, h3 {
     color: #333; 
@@ -84,6 +81,9 @@ h1, h2, h3 {
         transform: rotateY(360deg);
     }
 }
+
+
+
 
 p {
     color: #555; 
@@ -178,13 +178,13 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     border-color: #333;
     outline: none;
 }
-
 nav {
     background-color: #333; 
     padding: 15px;
     text-align: center;
     border-radius: 10px; 
 }
+
 
 nav a {
     color: white;
@@ -200,40 +200,107 @@ nav a:hover {
     color: #ddd; 
 }
 
-/* Estilos para el juego de memoria con cartas */
-.tablero {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 600px;
-    margin: 20px auto;
-}
 
-.carta {
-    width: 80px;
-    height: 80px;
-    margin: 10px;
-    background-color: #333;
-    color: #fff;
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-}
 
-.carta.volteada,
-.carta.encontrada {
+
+
+
+
+/* Diseño para Tablas y Formularios/*
+
+
+
+/* Estilo para el formulario */
+form {
     background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
     color: #333;
 }
 
-.carta.encontrada {
-    background-color: lightgreen;
-    cursor: default;
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="tel"],
+form input[type="radio"],
+form input[type="checkbox"],
+form input[list],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
 }
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    width: auto;
+    margin: 0 10px 0 0;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+/* Estilo para la tabla */
+table {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    color: #333;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+
 
 .back-to-top {
     position: absolute;
@@ -258,45 +325,4 @@ nav a:hover {
 .back-to-top:hover {
     opacity: 1;
     background-color: #f0f0f0; 
-}
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Bebas Neue", sans-serif;
-    line-height: 1.8;
-    padding-top: 70px; /* Coincide con la altura del header fijo */
-}
-
-.tablero {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-.carta {
-    width: 80px;
-    height: 80px;
-    background-color: #333;
-    color: #fff;
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.carta.volteada,
-.carta.encontrada {
-    background-color: #fff;
-    color: #333;
-}
-
-.carta.encontrada {
-    background-color: lightgreen;
-    cursor: default;
 }
